@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+        footer {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9em;
+            color: #555;
+            padding: 20px 0;
+        }
+
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.3-alpha.1/dist/style.css">
+</head>
+<body>
+<div id="title">Mind Map de Abertura de Chamados e Abertura de Mudanças</div>  
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.3-alpha.1/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.3-alpha.1/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:q,mm:v}=window,j=new q.Toolbar;j.attach(v);const we=j.render();we.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(we)})})()</script><script>((f,d,h,u)=>{const g=f();window.mm=g.Markmap.create("svg#mindmap",(d||g.deriveOptions)(u),h)})(()=>window.markmap,null,{"content":"Processo de Abertura de Chamado e Mudanças na Mapfre","children":[{"content":"1. Abertura de Chamado","children":[{"content":"1. <strong>SD - Interação</strong>: Ponto inicial de todos os chamados.","children":[{"content":"<strong>RF - Requisição de Serviço</strong>: Solicitações de acessos ou alterações de dados.","children":[{"content":"<a href=\"https://supportportal.es.mapfre.net/smbb/ess.do?ctx=docEngine&amp;file=incidents&amp;query=incident.id%3D%22SD05593518%22&amp;action=&amp;title=Intera%C3%A7%C3%A3o%20SD05593518&amp;queryHash=2349424c\">Abrir nova requisição de serviço</a>","children":[],"payload":{"lines":"5,6"}}],"payload":{"lines":"4,6"}},{"content":"<strong>IM - Incidente</strong>: Falhas ou erros afetando um usuário específico ou grupo restrito.","children":[{"content":"<a href=\"https://supportportal.es.mapfre.net/smbb/ess.do?ctx=docEngine&amp;file=incidents&amp;query=incident.id%3D%22SD05593518%22&amp;action=&amp;title=Intera%C3%A7%C3%A3o%20SD05593518&amp;queryHash=2349424c\">Abrir um chamado de falha</a>","children":[],"payload":{"lines":"7,9"}}],"payload":{"lines":"6,9"}}],"payload":{"lines":"3,9","listIndex":1}}],"payload":{"lines":"2,3"}},{"content":"2. PM - Problema","children":[],"payload":{"lines":"9,10"}},{"content":"3. Mudança/Gmud","children":[{"content":"3.1 Abertura de Gmuds","children":[{"content":"<strong>Mudança Emergencial</strong>: Aplicação imediata para incidentes críticos (Categoria: BR Emergency Change).","children":[],"payload":{"lines":"16,17"}},{"content":"<strong>Mudança Normal</strong>: Realizada em um único ambiente, ex.: HOMOLOG (Categoria: GLB Normal Change).","children":[],"payload":{"lines":"17,18"}},{"content":"<strong>Mudança Padrão</strong>: Passa por todos os ambientes (Homolog, Pré-Prod e Prod) para projetos ou incidentes (Categoria: BR R&amp;D Change).","children":[],"payload":{"lines":"18,20"}}],"payload":{"lines":"15,16"}},{"content":"3.2 Como abrir uma mudança","children":[{"content":"Fase 1 - Registro e Categorização","children":[{"content":"Preenchimento dos dados da mudança.","children":[],"payload":{"lines":"22,23"}},{"content":"[Vídeo da guilda de abertura de mudança](https://mapfrecorp.sharepoint.com/sites/Brasil-Wiki/_layouts/15/stream.aspx?id=%2Fsites%2FBrasil-Wiki/Documentos Compartilhados/Processo Release Train TW/Treinamento HP_Gest%C3%A3o de Mudan%C3%A7as.mp4)","children":[],"payload":{"lines":"23,25"}}],"payload":{"lines":"21,22"}},{"content":"Fase 2 - Análise de Risco e Impacto","children":[{"content":"Análise de riscos. [Video de suporte](https://mapfrecorp.sharepoint.com/sites/Brasil-Wiki/_layouts/15/stream.aspx?id=%2Fsites%2FBrasil-Wiki/Documentos Compartilhados/Processo Release Train TW/Treinamento HP_Gest%C3%A3o de Mudan%C3%A7as.mp4)","children":[],"payload":{"lines":"26,28"}}],"payload":{"lines":"25,26"}},{"content":"Fase 3 - Aprovação TCAB","children":[{"content":"Análise e aprovação pelo time GM.","children":[],"payload":{"lines":"29,31"}}],"payload":{"lines":"28,29"}},{"content":"Fase 4 - Integração","children":[{"content":"Mudança aprovada segue para a fase de integração.","children":[],"payload":{"lines":"32,34"}}],"payload":{"lines":"31,32"}}],"payload":{"lines":"20,21"}}],"payload":{"lines":"12,13"}},{"content":"4. Informações Importantes","children":[{"content":"1. Preencher o campo \"requisitante da mudança alternativo\" caso o requisitante principal esteja ausente.","children":[],"payload":{"lines":"35,36","listIndex":1}},{"content":"2. Avaliação de Risco e Ambientes: preencher todos os campos com informações detalhadas.","children":[],"payload":{"lines":"36,37","listIndex":2}},{"content":"3. <a href=\"https://mapfrecorp.sharepoint.com/:b:/r/sites/Brasil-Wiki/Documentos%20Compartilhados/Processo%20Release%20Train%20TW/Guia%20de%20R%C3%A1pido%20de%20Abertura%20de%20Chamados%20-%20HP%20-%20Suporte%20R%C3%A1pido%20sem%20depender%20do%20CATI.pdf?csf=1&amp;web=1&amp;e=0DthK1\">Guia de Abertura de Chamados</a>","children":[],"payload":{"lines":"37,38","listIndex":3}},{"content":"4. <a href=\"https://app.mapfre.com/smbbex/index.do?lang=pt-Br&amp;mode=index.do&amp;logout_msg=LogoutPage.session_timeout\">Consulta de Chamados</a>","children":[],"payload":{"lines":"38,39","listIndex":4}},{"content":"5. <a href=\"https://mapfrecorp.sharepoint.com/:b:/r/sites/Brasil-Wiki/Documentos%20Compartilhados/Processo%20Release%20Train%20TW/Guia%20de%20R%C3%A1pido%20de%20Abertura%20de%20Chamados%20-%20HP%20-%20Suporte%20R%C3%A1pido%20sem%20depender%20do%20CATI.pdf?csf=1&amp;web=1&amp;e=0DthK1\">Acesso Externo e Mobile</a>","children":[],"payload":{"lines":"39,40","listIndex":5}},{"content":"6. <a href=\"https://login.microsoftonline.com/5cc6c66d-ffb2-469f-9385-cda840e57836/oauth2/authorize?client_id=00000003-0000-0ff1-ce00-000000000000&amp;response_mode=form_post&amp;response_type=code+id_token&amp;resource=00000003-0000-0ff1-ce00-000000000000&amp;scope=openid&amp;nonce=9671922ABA68C6F20848452D48C9A385B4F7E4CBEB0DF92C-BB28B74FF2DAA48D23E39C82DE12DABED4700698842947C3574563D468236A42&amp;redirect_uri=https%3a%2f%2fmapfrecorp.sharepoint.com%2f_forms%2fdefault.aspx&amp;state=OD0w&amp;login_hint=RSEOLIVEIR%40bbmapfre.com.br&amp;claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&amp;wsucxt=1&amp;cobrandid=11bd8083-87e0-41b5-bb78-0bc43c8a8e8a&amp;client-request-id=00405ea1-806d-a000-492a-cada1996c757&amp;sso_nonce=AwABEgEAAAADAOz_BQD0_zj--LpkZ152IDD--QyiVk_MMEgO7fmY3YJvYu3dlxMNncSWez6j6DAoGh8j-P2VoTBTCTaiuBQCRtiG4R5aBSQgAA&amp;mscrid=00405ea1-806d-a000-492a-cada1996c757\">Vídeo com treinamento completo sobre HP – Realizado dia 02/04/2024</a>","children":[],"payload":{"lines":"40,41","listIndex":6}},{"content":"7. <a href=\"\">Vídeo com treinamento Abertura de mudanças no HP – Realizado dia 27/02/2024</a>","children":[],"payload":{"lines":"41,42","listIndex":7}}],"payload":{"lines":"34,35"}}],"payload":{"lines":"0,1"}},null)</script>
+</body>
+<div style="position: absolute; bottom: 20px; left: 20px;">
+  <h3>Entre em Contato</h3>
+  <a href="https://github.com/rodrigosenna" target="_blank">
+      <img src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="https://www.linkedin.com/in/rodrigo-sena-de-oliveira" target="_blank">
+      <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+   <p>E-mail: <a href="mailto:rseoliveir@mapfre.com.br">rseoliveir@mapfre.com.br</a></p>
+</div>
+<footer>
+  <p><center>Rodrigo Sena de Oliveira &copy; 2024 - Todos os direitos reservados</center></p>
+</footer>
+</html>
